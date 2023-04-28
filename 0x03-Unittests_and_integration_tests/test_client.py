@@ -10,7 +10,7 @@ from fixtures import TEST_PAYLOAD
 
 class TestGithubOrgClient(unittest.TestCase):
     """
-    Test the GithubOrgClient class methods unit test
+    Test the GithubOrgClient class methods
     """
     @parameterized.expand([
         ("google"),
@@ -30,7 +30,8 @@ class TestGithubOrgClient(unittest.TestCase):
 
     def test_public_repos_url(self):
         """
-        Test TestGithubOrgClient's _public_repos_url method works as expected.
+        Test TestGithubOrgClient's _public_repos_url method works
+        as expected.
         """
         with patch.object(GithubOrgClient,
                           'org',
